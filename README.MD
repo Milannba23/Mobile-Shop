@@ -1,12 +1,12 @@
 📱 Mobile Shop - Menadžment Lagera
 
-Ovo je web aplikacija za upravljanje lagerom mobilnih telefona, razvijena kao **CRUD** sistem (Create, Read, Update, Delete). Projekat koristi PHP za serversku logiku i MySQL za skladištenje podataka, uz moderan dizajn postignut kroz eksterni CSS.
+Ovo je web aplikacija za upravljanje lagerom mobilnih telefona, razvijena kao **CRUD** sistem (Create, Read, Update, Delete). Projekat koristi PHP za serversku logiku i MySQL za skladištenje podataka.
 
 📸 Pregled Projekta (Screenshots)
 
-Ispod se nalaze vizuelni prikazi glavnih delova aplikacije, uključujući kod i bazu podataka:
+Ispod se nalaze vizuelni prikazi glavnih delova aplikacije, koda i baze podataka:
 
-1. Glavna stranica (index.php)
+Glavna stranica (index.php)
 
 Prikaz centralne tabele sa lagerom i formom za unos novih modela.
 ![Glavna Stranica](Pictures/index.php.png)
@@ -17,9 +17,9 @@ Interfejs koji omogućava brzo ažuriranje informacija o telefonima.
 ![Izmena Podataka](Pictures/update.php.png)
 
 3. Baza podataka (phpMyAdmin)
-
 Pregled `mobile_shop` baze i strukture tabele `phones`.
 ![Baza Podataka](Pictures/phpmyadmin.png)
+
 
 🛠️ Funkcionalnosti
 
@@ -37,7 +37,7 @@ Pregled `mobile_shop` baze i strukture tabele `phones`.
 
 ⚙️ Podešavanje baze
 
-Da bi aplikacija radila, potrebno je izvršiti sledeći SQL upit u vašem SQL editoru:
+U **phpMyAdmin**-u kreirajte bazu `mobile_shop` i izvršite sledeći upit:
 
 CREATE TABLE phones (
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
@@ -47,13 +47,8 @@ CREATE TABLE phones (
     quantity INT(11) NOT NULL
 );
 
-Podešavanje lokalnog servera
+⚙️ Instalacija
 
-Instalirajte i pokrenite XAMPP.
-Smestite ceo folder projekta u folder: C:\xampp\htdocs\.
-U XAMPP Control Panel-u pokrenite module Apache i MySQL.
-
-Pokretanje aplikacije
-
-U vašem veb brauzeru otvorite adresu:
-localhost/Mobile Shop/index.php
+1. Kreirajte bazu `mobile_shop`.
+2. Uvezite tabelu `phones`.
+3. Pokrenite putem XAMPP-a na adresi `localhost/Mobile Shop/index.php`.
